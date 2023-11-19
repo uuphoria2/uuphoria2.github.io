@@ -1,13 +1,13 @@
 @font-face {
     font-family: ms-sans-serif;
-    src: url('game/font/ms-sans-serif.otf');
+    src: url('game/font/W95FA.otf');
     font-display: swap;
 }
 
 body {
     color: white;
     background-color: #018281;
-    font-family: 'ms-sans-serif';
+    font-family: 'W95FA';
     display: grid;
     place-items: center;
     text-align: center;
@@ -23,14 +23,14 @@ a {
 }
 
 label, p, pre {
-    font-family: 'ms-sans-serif';
+    font-family: 'W95FA';
     font-size: 20px;
 }
 
 button {
     background-image: url("textures/button.png");
     background-size: cover;
-    font-family: 'ms-sans-serif';
+    font-family: 'W95FA';
     font-size: 17px;
     height: 28px;
 }
