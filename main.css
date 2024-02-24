@@ -1,0 +1,34 @@
+body {
+  background-image: linear-gradient(#000, rgb(59, 30, 30));
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+p, h2, fake, a {
+  color: rgb(255, 219, 219);
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+  
+}
+a {
+  color: rgb(160, 131, 146)
+}
+.center {
+  text-align: center;
+}
+.bread {
+  height: 25vh;
+}
+
+.donateaddr {
+  display: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+.donateblurb {
+  text-decoration: underline;
+}
+.xmr:hover .donateaddr {
+  display: block;
+}
+.xmr:hover .donateblurb {
+  display: none;
+}
