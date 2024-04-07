@@ -47,7 +47,7 @@ let increment = 0
 //Loads in a library model
 function loadMap(xIncrement) {
   const loader = new GLTFLoader()
-  loader.load("./assets/library.glb", function (gltf) {
+  loader.load("./resources/library.glb", function (gltf) {
     gltf.scene.position.y = -250
     gltf.scene.position.x = xIncrement
     scene.add(gltf.scene)
