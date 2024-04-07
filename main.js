@@ -1,3 +1,19 @@
+import * as THREE from "./assets/lib/three.module.js"
+import { GLTFLoader } from "./assets/lib/model_loader.js"
+
+window.hideText = function() {
+  document.getElementById("texts").hidden = !document.getElementById("texts").hidden
+}
+window.redirect = function(site) {
+  window.location.href = `https://${site}`
+}
+
+window.addEventListener("keydown", e => {
+  if (e.key == "Escape") window.hideText()
+})
+
+console.log("%Please note this random blog thing I made is only updated randomly by me", "font-size: 40px;")
+
 // CREDITS TO AGENT-11 FOR THIS CODE AND THE LIBRARY.GLB FILE IN HIS CLASSIC GITHUB.IO
 // Setup
 const scene = new THREE.Scene()
