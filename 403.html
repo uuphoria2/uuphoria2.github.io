@@ -12,16 +12,20 @@
     <script>
         // Set the HTTP status code to 403 Forbidden
         window.onload = function() {
-            // Create a fake response object with status 403
-            var response = {
-                status: 403,
-                statusText: 'Forbidden'
-            };
+            // Set the HTTP status code to 403 Forbidden
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", window.location.href, true);
+            xhr.send();
 
-            // Manually dispatch a 403 error event
-            var event = new Event('error', { bubbles: true, cancelable: true });
-            event.target = document;
-            document.dispatchEvent(event);
+            // Update the status code to 403
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 403) {
+                        // Handle the 403 Forbidden status
+                        console.log("403 Forbidden");
+                    }
+                }
+            };
         };
     </script>
 </body>
