@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forbidden Access</title>
+</head>
+<body>
+    <h1>Forbidden Access</h1>
+    <p>You do not have permission to access this directory.</p>
+
+    <script>
+        // This script will try to load a non-existent resource, causing a 403 error
+        fetch('nonexistentfile.html')
+            .then(response => {
+                if (!response.ok) {
+                    // If the response is not OK (status code other than 2xx), redirect to 403.html
+                    window.location.replace('403.html');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
