@@ -12,7 +12,7 @@ window.addEventListener("keydown", e => {
   if (e.key == "Escape") window.hideText()
 })
 
-console.log("%Please note this random blog thing I made is only updated randomly by me", "font-size: 40px;")
+console.log("%chi", "font-size: 40px;")
 
 // CREDITS TO AGENT-11 FOR THIS CODE AND THE LIBRARY.GLB FILE IN HIS CLASSIC GITHUB.IO
 // Setup
