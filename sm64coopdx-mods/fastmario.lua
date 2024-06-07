@@ -1,5 +1,5 @@
 -- name: The Fast Speed Mod
--- description: Created by \\#ec7731\\uuphoria2\\#dcdcdc\\\n\nThis mod makes the player faster and increased jump height
+-- description: This mod makes the player faster and increased jump height \n\nBy \\#808080\\uuphori\\#ffa500\\a2\\#ffffff\\.
 
 function mario_update(m)
     m.peakHeight = m.pos.y
