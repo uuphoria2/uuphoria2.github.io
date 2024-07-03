@@ -1,28 +1,40 @@
-<!-- CREDITS FOR MOST OF THIS GO TO AGENT-11 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta content="uuphoria2's blog" property="og:title">
-    <meta content='whoa' property="og:description">
+    <meta content="whoa" property="og:description">
     <meta content="https://uuphoria2.is-a.dev" property="og:url">
     <meta content="#FDFD3F" data-react-helmet="true" name="theme-color">
-  </head>
-  <body>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <style>
+        .secret-button {
+            background-color: #FFD700;
+            color: #000;
+            border: 2px solid #DAA520;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
     <div id="texts">
-      <h1>uuphoria2's blog</h1>
-      <button onclick="window.location.href = './Projects/normalsm64js/'">sm64js vanilla</a>
-      <button onclick="window.redirect('mmo.sm64jsarchive.com')">sm64jsarchive MMO</a>
-      <button onclick="window.location.href = './Projects/maze95js/'">Maze 95 JS</a>
-      <button onclick="window.redirect('maze95.js.org')" id="m95lnk">Original Maze 95 JS</a>
-      <button onclick="window.location.href = './sm64coopdx-mods/'">SM64coopdx mods I created (List)</a>
-      <button onclick="window.location.href = './credits.txt'">Credits</a>
-      <button onclick="window.hideText()" id="hide">Background only Press ESC to toggle on and off.</a>
+        <h1>uuphoria2's blog</h1>
+        <button onclick="window.location.href = './Projects/normalsm64js/'">sm64js vanilla</button>
+        <button onclick="window.redirect('mmo.sm64jsarchive.com')">sm64jsarchive MMO</button>
+        <button onclick="window.location.href = './Projects/maze95js/'">Maze 95 JS</button>
+        <button onclick="window.redirect('maze95.js.org')" id="m95lnk">Original Maze 95 JS</button>
+        <button onclick="window.location.href = './sm64coopdx-mods/'">SM64coopdx mods I created (List)</button>
+        <button onclick="window.location.href = './credits.txt'">Credits</button>
+        <button onclick="window.hideText()" id="hide">Background only Press ESC to toggle on and off.</button>
     </div>
     <canvas id="bg"></canvas>
+    <button class="secret-button" onclick="window.location.href = './top10secretreal/'">no way is this a secret button on this page?</button>
     <script type="module" src="./main.js"></script>
-    <link rel="stylesheet" href="./stylesheet.css">
-    <button onclick="window.location.href = './top10secretreal/'">no way is this a secret button on this page?/a>
-  </body>
+</body>
 </html>
