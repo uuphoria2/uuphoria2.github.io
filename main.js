@@ -12,7 +12,18 @@ window.addEventListener("keydown", e => {
   if (e.key == "Escape") window.hideText()
 })
 
-console.log("%chi", "font-size: 40px;")
+const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+let index = 0;
+
+setInterval(() => {
+  console.clear();
+  console.log(
+    `%ch%ci`, 
+    `color: ${colors[index % colors.length]}; font-size: 35px;`, 
+    `color: ${colors[(index + 1) % colors.length]}; font-size: 35px;`
+  );
+  index++;
+}, 500);
 
 // CREDITS TO AGENT-11 FOR THIS CODE AND THE LIBRARY.GLB FILE IN HIS CLASSIC GITHUB.IO
 // Setup
